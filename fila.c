@@ -38,7 +38,7 @@ int desenfileirar()
                 fila[i] = fila[i + 1];
             }
         }
-
+        ultimaPosicao--;
     } else {
         printf("Não foi possivel desenfileirar item. Lista vazia!");
     }
