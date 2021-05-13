@@ -13,6 +13,7 @@ int main(void)
     enfileirar(2);
     enfileirar(3);
     desenfileirar();
+    enfileirar(1);
 
     exibir();
 
