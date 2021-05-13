@@ -84,8 +84,4 @@ void limpar()
     for (int i = 0; i < TAM_FILA; i++) {
         desenfileirar();
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6653e94b7e0d68ba2bd8562934f75e60c123800c
