@@ -7,3 +7,5 @@ int vazia();
 int cheia();
 
 void exibir();
+
+void limpar();
