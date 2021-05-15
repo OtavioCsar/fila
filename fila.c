@@ -14,7 +14,7 @@ int main(void)
     enfileirar(3);
     desenfileirar();
     enfileirar(1);
-
+    limpar();
     exibir();
 
     return 0;
@@ -77,5 +77,11 @@ void exibir()
 
     for (int i = 0; i < TAM_FILA; i++) {
         printf("%i\n", fila[i]);
+    }
+}
+void limpar()
+{
+    for (int i = 0; i < TAM_FILA; i++) {
+        desenfileirar();
     }
 }
