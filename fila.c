@@ -4,7 +4,7 @@
 
 #define TAM_FILA 3
 
-int fila[TAM_FILA], ultimaPosicao = 0;
+int fila[TAM_FILA], ultimaPosicao = TAM_FILA - 1;
 
 int main(void)
 {
@@ -13,8 +13,6 @@ int main(void)
     enfileirar(2);
     enfileirar(3);
     desenfileirar();
-    enfileirar(1);
-    limpar();
     exibir();
 
     return 0;
@@ -23,7 +21,7 @@ void enfileirar(int valor)
 {
     if (cheia() == 0) {
         fila[ultimaPosicao] = valor;
-        ultimaPosicao++;
+        ultimaPosicao--;
     } else {
         printf("Nao foi possivel enfileirar item. Lista cheia!");
     }
@@ -39,7 +37,7 @@ int desenfileirar()
                 fila[i] = fila[i + 1];
             }
         }
-        ultimaPosicao--;
+        ultimaPosicao++;
     } else {
         printf("Não foi possivel desenfileirar item. Lista vazia!");
     }
