@@ -6,7 +6,10 @@ public class Sell {
         return sales;
     }
 
-    void makeSale() {
-
+    boolean makeSale(Product product, Stock stock) {
+        if (stock.stockCheck(product) && product.quant > 0) {
+            return true;
+        }
+        return false;
     }
 }

@@ -4,16 +4,24 @@ public class Product {
     float price;
     int quant;
 
-    Product(String name, String desc, float price, int quant) {
-
+    Product(String pName, String pDesc, float pPrice, int pQuant) {
+        name = pName;
+        desc = pDesc;
+        price = pPrice;
+        quant = pQuant;
     }
 
     void showInfo() {
-        System.out.println("Nome: "name,"Descrição: "desc,"Preço: "price,"Quantidade: "quant);
     }
 
     float changePrice(float newPrice) {
         price = newPrice;
         return price;
     }
+
+    int decreaseQuantity() {
+        quant -= 1;
+        return quant;
+    }
+
 }
